@@ -1,0 +1,9 @@
+# Keep the photography in focus; NASA red marks attention states.
+[bar]
+background = "#000000"
+background-alpha = 1.0
+text = "#f0f0fa"
+active = "#e60d2e"
+scale-with-font = true
+size-horizontal = 26
+size-vertical = 28

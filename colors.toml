@@ -1,0 +1,43 @@
+# Starship — SpaceX monochrome, stainless steel, and NASA signal colours.
+# NASA's exact PMS 286 / PMS 185 screen values are reserved for filled
+# selections and alerts. Lighter text colours stay readable on black.
+mode = "dark"
+
+accent = "#f0f0fa"
+selection = "#0033ab"
+selection_background = "#0033ab"
+selection_foreground = "#ffffff"
+muted = "#828792"
+
+background = "#000000"
+dark_background = "#080a0e"
+darker_background = "#040507"
+lighter_background = "#171b22"
+
+foreground = "#f0f0fa"
+dark_foreground = "#828792"
+light_foreground = "#bcc2ce"
+bright_foreground = "#ffffff"
+
+red = "#ff667f"
+yellow = "#e5c38b"
+orange = "#e9a575"
+green = "#a3c7b0"
+cyan = "#9bcbd8"
+blue = "#7ba7ff"
+magenta = "#b7a9d6"
+brown = "#9b8068"
+
+bright_red = "#ff8fa1"
+bright_yellow = "#f2d6a6"
+bright_green = "#bfdfca"
+bright_cyan = "#b8e0ea"
+bright_blue = "#a3c2ff"
+bright_magenta = "#d0c3ea"
+
+# Colour-only border tokens, consumed by Omarchy's generated Hyprland config.
+hyprland_active_border = "#bcc2ce"
+hyprland_inactive_border = "#30343d"
+
+nasa_blue = "#0033ab"
+nasa_red = "#e60d2e"
