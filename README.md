@@ -22,19 +22,31 @@ omarchy theme bg next
 
 ## Palette
 
-| Colour | Hex | Role |
+The terminal and editor colours come from **Aether 4.32.0**, using its read-only image palette extractor on all 16 supplied photos:
+
+```bash
+aether --extract-palette backgrounds/06-raptor-array.webp --json
+```
+
+[`palette.json`](palette.json) preserves all extraction results and maps each selected token to its photo and ANSI palette slot. Aether derives readable colours from image analysis; it can adjust tones, so these are generated image palettes rather than unchanged pixel samples. The muted steel colour uses Aether's `--lighten` utility on the Raptor array's extracted grey.
+
+| Colour | Hex | Source / role |
 | --- | --- | --- |
-| Space black | `#000000` | Main backgrounds |
+| Space black | `#000000` | SpaceX base backgrounds |
 | SpaceX white | `#F0F0FA` | Foreground and primary accent |
-| Stainless steel | `#BCC2CE` | Active borders and secondary text |
+| Stainless steel | `#CBD0DB` | Orbital coast; borders and secondary text |
+| Plume red | `#E5998D` | Raptor array; terminal and editor errors |
+| Exhaust gold | `#E6B88B` | Raptor array; strings and terminal yellow |
+| Dawn green | `#84B490` | Starbase dawn; terminal green |
+| Orbital cyan | `#91E0FF` | Orbital coast; terminal cyan |
+| Engine blue | `#86A1DF` | Raptor array; terminal blue |
+| Engine violet | `#C094DE` | Engine bay; terminal magenta |
 | NASA blue / PMS 286 | `#0033AB` | Selection background, with white text |
 | NASA red / PMS 185 | `#E60D2E` | Bar attention states |
-| Readable blue | `#7BA7FF` | Terminal and editor syntax |
-| Readable red | `#FF667F` | Terminal and editor errors |
 
-Black and `#F0F0FA` follow [SpaceX's website](https://www.spacex.com/) and its [published stylesheet](https://www.spacex.com/styles.1a4bd8588c6ea618.css). NASA's Pantone designations and these screen hex values are specified in its [Artemis Generation Spacesuits guide, p. 35](https://www.nasa.gov/wp-content/uploads/2023/03/artemis-generation-spacesuits-508.pdf). Steel and the supporting syntax colours are custom additions.
+Black and `#F0F0FA` follow [SpaceX's website](https://www.spacex.com/) and its [published stylesheet](https://www.spacex.com/styles.1a4bd8588c6ea618.css). NASA's Pantone designations and these screen hex values are specified in its [Artemis Generation Spacesuits guide, p. 35](https://www.nasa.gov/wp-content/uploads/2023/03/artemis-generation-spacesuits-508.pdf). These small brand accents are retained alongside the image-derived palette.
 
-All normal ANSI colours and muted text exceed 4.5:1 contrast on black. White on the NASA blue selection exceeds 10:1. Exact NASA colours are used for selections and alerts; lighter tints keep syntax readable.
+All normal ANSI text colours and muted text exceed 4.5:1 contrast on black. White on the NASA blue selection exceeds 10:1.
 
 ## Omarchy support
 

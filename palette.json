@@ -1,0 +1,496 @@
+{
+  "tool": "Aether",
+  "version": "4.32.0",
+  "extraction_mode": "normal",
+  "command": "aether --extract-palette <wallpaper> --json",
+  "notes": "Aether derives ANSI palettes from image analysis, including tonal/contrast adjustments. These are tool-generated palettes, not a claim that every hex is an unchanged source pixel. SpaceX black/white and NASA selection/attention tokens are intentionally retained.",
+  "selected_tokens": {
+    "light_foreground": {
+      "value": "#cbd0db",
+      "wallpaper": "backgrounds/01-orbital-coast.webp",
+      "ansi_slot": 7
+    },
+    "bright_foreground": {
+      "value": "#f1f5ff",
+      "wallpaper": "backgrounds/01-orbital-coast.webp",
+      "ansi_slot": 15
+    },
+    "dark_background": {
+      "value": "#070709",
+      "wallpaper": "backgrounds/01-orbital-coast.webp",
+      "ansi_slot": 0
+    },
+    "darker_background": {
+      "value": "#000518",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 0
+    },
+    "lighter_background": {
+      "value": "#120013",
+      "wallpaper": "backgrounds/11-engine-bay.webp",
+      "ansi_slot": 0
+    },
+    "red": {
+      "value": "#e5998d",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 9
+    },
+    "bright_red": {
+      "value": "#f8aab0",
+      "wallpaper": "backgrounds/07-liftoff.webp",
+      "ansi_slot": 13
+    },
+    "yellow": {
+      "value": "#e6b88b",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 2
+    },
+    "bright_yellow": {
+      "value": "#ffe7b1",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 15
+    },
+    "orange": {
+      "value": "#ffc06e",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 10
+    },
+    "green": {
+      "value": "#84b490",
+      "wallpaper": "backgrounds/02-starbase-dawn.webp",
+      "ansi_slot": 2
+    },
+    "bright_green": {
+      "value": "#a4dcac",
+      "wallpaper": "backgrounds/02-starbase-dawn.webp",
+      "ansi_slot": 10
+    },
+    "cyan": {
+      "value": "#91e0ff",
+      "wallpaper": "backgrounds/01-orbital-coast.webp",
+      "ansi_slot": 6
+    },
+    "bright_cyan": {
+      "value": "#94f8ff",
+      "wallpaper": "backgrounds/01-orbital-coast.webp",
+      "ansi_slot": 14
+    },
+    "blue": {
+      "value": "#86a1df",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 12
+    },
+    "bright_blue": {
+      "value": "#8bb5ff",
+      "wallpaper": "backgrounds/15-stainless-steel.webp",
+      "ansi_slot": 12
+    },
+    "magenta": {
+      "value": "#c094de",
+      "wallpaper": "backgrounds/11-engine-bay.webp",
+      "ansi_slot": 5
+    },
+    "bright_magenta": {
+      "value": "#dca3ff",
+      "wallpaper": "backgrounds/11-engine-bay.webp",
+      "ansi_slot": 13
+    },
+    "brown": {
+      "value": "#b38d6d",
+      "wallpaper": "backgrounds/14-golden-flight.webp",
+      "ansi_slot": 1
+    },
+    "hyprland_active_border": {
+      "value": "#cbd0db",
+      "wallpaper": "backgrounds/01-orbital-coast.webp",
+      "ansi_slot": 7
+    },
+    "hyprland_inactive_border": {
+      "value": "#585c61",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 8
+    },
+    "muted": {
+      "value": "#929598",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 8,
+      "adjustment": "aether --lighten #585c61 35 --json"
+    },
+    "dark_foreground": {
+      "value": "#929598",
+      "wallpaper": "backgrounds/06-raptor-array.webp",
+      "ansi_slot": 8,
+      "adjustment": "aether --lighten #585c61 35 --json"
+    }
+  },
+  "palettes": [
+    {
+      "colors": [
+        "#070709",
+        "#9f89c5",
+        "#79ceff",
+        "#8bffff",
+        "#687dbc",
+        "#a4a1f5",
+        "#91e0ff",
+        "#CBD0DB",
+        "#5d5d63",
+        "#b79be6",
+        "#73e7ff",
+        "#64ffff",
+        "#7791df",
+        "#b8b3ff",
+        "#94f8ff",
+        "#f1f5ff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/01-orbital-coast.webp"
+    },
+    {
+      "colors": [
+        "#050607",
+        "#b9876b",
+        "#84b490",
+        "#e9d798",
+        "#6c78ac",
+        "#6a75a8",
+        "#61a797",
+        "#E7E3C8",
+        "#575c61",
+        "#e4ab86",
+        "#a4dcac",
+        "#fde575",
+        "#8f9add",
+        "#8d97d9",
+        "#7fcfba",
+        "#f5eeaf"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/02-starbase-dawn.webp"
+    },
+    {
+      "colors": [
+        "#070507",
+        "#e7c193",
+        "#c2ab75",
+        "#ae8f43",
+        "#6678ab",
+        "#667ab2",
+        "#6f88b5",
+        "#D9C3B6",
+        "#6c676c",
+        "#ffca76",
+        "#e5cd85",
+        "#d6b54d",
+        "#889adc",
+        "#889ce4",
+        "#91ace5",
+        "#facaa7"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/03-ignition.webp"
+    },
+    {
+      "colors": [
+        "#070805",
+        "#b78e54",
+        "#d0c66e",
+        "#fff287",
+        "#658e4f",
+        "#e4985b",
+        "#d4e675",
+        "#EBE273",
+        "#5d5f59",
+        "#d4a157",
+        "#ebdd66",
+        "#fff164",
+        "#74a658",
+        "#ffa855",
+        "#eaff6f",
+        "#f9f5ea"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/04-across-the-water.webp"
+    },
+    {
+      "colors": [
+        "#05070c",
+        "#998bc8",
+        "#71d0fd",
+        "#83ffff",
+        "#617fbc",
+        "#9ba4f7",
+        "#85e3ff",
+        "#E7C6CA",
+        "#5b5d63",
+        "#b09dea",
+        "#67eaff",
+        "#54ffff",
+        "#6e94df",
+        "#adb7ff",
+        "#84fcff",
+        "#f0f5ff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/05-leaving-starbase.webp"
+    },
+    {
+      "colors": [
+        "#000518",
+        "#b9776e",
+        "#e6b88b",
+        "#ffdfa7",
+        "#647eae",
+        "#a1789f",
+        "#617db2",
+        "#EBDCC6",
+        "#585c61",
+        "#e5998d",
+        "#ffc06e",
+        "#ffe581",
+        "#86a1df",
+        "#ca99cb",
+        "#83a0e4",
+        "#ffe7b1"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/06-raptor-array.webp"
+    },
+    {
+      "colors": [
+        "#060808",
+        "#b68a81",
+        "#e5b998",
+        "#ffe3c1",
+        "#9f717f",
+        "#d7999d",
+        "#fed29a",
+        "#D8A8B5",
+        "#586060",
+        "#d39c92",
+        "#ffcca1",
+        "#ffe0b5",
+        "#bc8294",
+        "#f8aab0",
+        "#ffe7a1",
+        "#fff2ef"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/07-liftoff.webp"
+    },
+    {
+      "colors": [
+        "#030608",
+        "#c25a4b",
+        "#f0b54c",
+        "#e6d62e",
+        "#4e7bd6",
+        "#ba5b9b",
+        "#79aeff",
+        "#DCDDD7",
+        "#63696d",
+        "#f17b66",
+        "#ffbe00",
+        "#f9e500",
+        "#6f9cff",
+        "#e878c9",
+        "#96cdff",
+        "#e8eec9"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/08-launch-plume.webp"
+    },
+    {
+      "colors": [
+        "#050612",
+        "#9987c3",
+        "#72cbfc",
+        "#84ffff",
+        "#627bb9",
+        "#9d9ff2",
+        "#89deff",
+        "#EBCFD9",
+        "#5c5d63",
+        "#b199e5",
+        "#6be5ff",
+        "#5effff",
+        "#718fdc",
+        "#b0b1ff",
+        "#8af6ff",
+        "#f0f5ff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/09-ascent.webp"
+    },
+    {
+      "colors": [
+        "#080708",
+        "#9d8ac6",
+        "#76ceff",
+        "#89ffff",
+        "#667ebc",
+        "#a1a2f6",
+        "#8de1ff",
+        "#ECECEB",
+        "#615c61",
+        "#b59ce8",
+        "#6fe8ff",
+        "#5fffff",
+        "#7492df",
+        "#b5b4ff",
+        "#8ff9ff",
+        "#f1f5ff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/10-above-earth.webp"
+    },
+    {
+      "colors": [
+        "#120013",
+        "#af80af",
+        "#9cc0ff",
+        "#ffccfe",
+        "#8271b0",
+        "#c094de",
+        "#c1ceff",
+        "#D8DCDF",
+        "#605b60",
+        "#cb91cb",
+        "#a7d5ff",
+        "#ffc6ff",
+        "#9883d1",
+        "#dca3ff",
+        "#d3e3ff",
+        "#f7f3fd"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/11-engine-bay.webp"
+    },
+    {
+      "colors": [
+        "#07070a",
+        "#a089c4",
+        "#7acdff",
+        "#8dffff",
+        "#697dbc",
+        "#a5a0f5",
+        "#93dfff",
+        "#D1D5DC",
+        "#5d5d63",
+        "#b89be6",
+        "#76e6ff",
+        "#68ffff",
+        "#7990df",
+        "#bab3ff",
+        "#98f7ff",
+        "#f1f5ff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/12-blue-planet.webp"
+    },
+    {
+      "colors": [
+        "#0b0500",
+        "#9a8a4b",
+        "#847a27",
+        "#bfb64f",
+        "#6f77b4",
+        "#5d7cb4",
+        "#a2c7fd",
+        "#DCDDDF",
+        "#6c6963",
+        "#c0b05b",
+        "#a9a02b",
+        "#ded644",
+        "#9299e7",
+        "#7e9fe7",
+        "#a1d2ff",
+        "#deeaff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/13-on-the-pad.webp"
+    },
+    {
+      "colors": [
+        "#0d0602",
+        "#b38d6d",
+        "#d7c188",
+        "#ffeda9",
+        "#a77067",
+        "#da9b7e",
+        "#e5de8f",
+        "#E8E8E8",
+        "#625d58",
+        "#d0a178",
+        "#f3d78b",
+        "#ffeb96",
+        "#c48175",
+        "#fcac87",
+        "#fef692",
+        "#fcf4ea"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/14-golden-flight.webp"
+    },
+    {
+      "colors": [
+        "#050509",
+        "#987638",
+        "#a19139",
+        "#92800e",
+        "#6992d2",
+        "#87a9db",
+        "#a8ccff",
+        "#E9E0C4",
+        "#68676e",
+        "#c09b47",
+        "#c8b83d",
+        "#b8a600",
+        "#8bb5ff",
+        "#a8ccff",
+        "#a6d7ff",
+        "#fcecac"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/15-stainless-steel.webp"
+    },
+    {
+      "colors": [
+        "#06070d",
+        "#9d8bc0",
+        "#83cdf8",
+        "#9bffff",
+        "#6a7eb5",
+        "#a3a3ec",
+        "#9ae0ff",
+        "#d5f5ff",
+        "#5c5d64",
+        "#b49ee0",
+        "#83e6ff",
+        "#7fffff",
+        "#7a93d6",
+        "#b7b7ff",
+        "#a0f8ff",
+        "#f1f5ff"
+      ],
+      "lightMode": false,
+      "mode": "normal",
+      "wallpaper": "backgrounds/16-grid-fin.webp"
+    }
+  ]
+}

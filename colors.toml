@@ -1,43 +1,41 @@
-# Starship — SpaceX monochrome, stainless steel, and NASA signal colours.
-# NASA's exact PMS 286 / PMS 185 screen values are reserved for filled
-# selections and alerts. Lighter text colours stay readable on black.
+# Starship — SpaceX monochrome, Aether palettes from the photos, NASA signals.
+# See palette.json for extraction results and the source of every image colour.
 mode = "dark"
 
 accent = "#f0f0fa"
 selection = "#0033ab"
 selection_background = "#0033ab"
 selection_foreground = "#ffffff"
-muted = "#828792"
+muted = "#929598"
 
 background = "#000000"
-dark_background = "#080a0e"
-darker_background = "#040507"
-lighter_background = "#171b22"
+dark_background = "#070709"
+darker_background = "#000518"
+lighter_background = "#120013"
 
 foreground = "#f0f0fa"
-dark_foreground = "#828792"
-light_foreground = "#bcc2ce"
-bright_foreground = "#ffffff"
+dark_foreground = "#929598"
+light_foreground = "#cbd0db"
+bright_foreground = "#f1f5ff"
 
-red = "#ff667f"
-yellow = "#e5c38b"
-orange = "#e9a575"
-green = "#a3c7b0"
-cyan = "#9bcbd8"
-blue = "#7ba7ff"
-magenta = "#b7a9d6"
-brown = "#9b8068"
+red = "#e5998d"
+yellow = "#e6b88b"
+orange = "#ffc06e"
+green = "#84b490"
+cyan = "#91e0ff"
+blue = "#86a1df"
+magenta = "#c094de"
+brown = "#b38d6d"
 
-bright_red = "#ff8fa1"
-bright_yellow = "#f2d6a6"
-bright_green = "#bfdfca"
-bright_cyan = "#b8e0ea"
-bright_blue = "#a3c2ff"
-bright_magenta = "#d0c3ea"
+bright_red = "#f8aab0"
+bright_yellow = "#ffe7b1"
+bright_green = "#a4dcac"
+bright_cyan = "#94f8ff"
+bright_blue = "#8bb5ff"
+bright_magenta = "#dca3ff"
 
-# Colour-only border tokens, consumed by Omarchy's generated Hyprland config.
-hyprland_active_border = "#bcc2ce"
-hyprland_inactive_border = "#30343d"
+hyprland_active_border = "#cbd0db"
+hyprland_inactive_border = "#585c61"
 
 nasa_blue = "#0033ab"
 nasa_red = "#e60d2e"
