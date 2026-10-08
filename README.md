@@ -41,12 +41,12 @@ aether --extract-palette backgrounds/06-raptor-array.webp --json
 | Orbital cyan | `#91E0FF` | Orbital coast; terminal cyan |
 | Engine blue | `#86A1DF` | Raptor array; terminal blue |
 | Engine violet | `#C094DE` | Engine bay; terminal magenta |
-| NASA blue / PMS 286 | `#0033AB` | Selection background, with white text |
+| NASA blue / PMS 286 | `#0033AB` | Selection background; image-derived bright foreground |
 | NASA red / PMS 185 | `#E60D2E` | Bar attention states |
 
 Black and `#F0F0FA` follow [SpaceX's website](https://www.spacex.com/) and its [published stylesheet](https://www.spacex.com/styles.1a4bd8588c6ea618.css). NASA's Pantone designations and these screen hex values are specified in its [Artemis Generation Spacesuits guide, p. 35](https://www.nasa.gov/wp-content/uploads/2023/03/artemis-generation-spacesuits-508.pdf). These small brand accents are retained alongside the image-derived palette.
 
-All normal ANSI text colours and muted text exceed 4.5:1 contrast on black. White on the NASA blue selection exceeds 10:1.
+All normal ANSI text colours and muted text exceed 4.5:1 contrast on black. The image-derived bright foreground on the NASA blue selection exceeds 9:1.
 
 ## Omarchy support
 

@@ -4,8 +4,6 @@ mode = "dark"
 
 accent = "#f0f0fa"
 selection = "#0033ab"
-selection_background = "#0033ab"
-selection_foreground = "#ffffff"
 muted = "#929598"
 
 background = "#000000"
@@ -36,6 +34,3 @@ bright_magenta = "#dca3ff"
 
 hyprland_active_border = "#cbd0db"
 hyprland_inactive_border = "#585c61"
-
-nasa_blue = "#0033ab"
-nasa_red = "#e60d2e"
