@@ -1,6 +1,6 @@
-# Starship — Aether palette from the default Starship launch photograph.
-# Warm launch-night surfaces, exhaust cream, sky blue; small NASA signals.
-# Extraction and tonal adjustments are recorded in palette.json.
+# Starship — launch-photo palette extracted with Aether.
+# Launch night, exhaust cream, sky blue, and NASA signals.
+# See palette.json for extraction and tonal adjustments.
 mode = "dark"
 
 accent = "#527dbc"
