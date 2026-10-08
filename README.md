@@ -2,7 +2,7 @@
 
 # Starship for Omarchy
 
-Deep black surfaces, SpaceX white, stainless steel borders, and a little NASA. An Omarchy 4 theme with 16 SpaceX photographs, including **Orbital coast** as the default wallpaper.
+Launch-night surfaces, exhaust cream, sky blue, and a little NASA. An Omarchy 4 theme with **28 wallpapers**: the 16 supplied SpaceX photographs and all 12 backgrounds from [Steve Derico’s Space theme](https://github.com/stevederico/omarchy-space-theme). Its **Starship launch** photograph is the default wallpaper and the source of the base palette.
 
 ![Starship running on Omarchy with a terminal and Neovim](preview.png)
 
@@ -22,35 +22,35 @@ omarchy theme bg next
 
 ## Palette
 
-The terminal and editor colours come from **Aether 4.32.0**, using its read-only image palette extractor on all 16 supplied photos:
+The base, text, accent, and ANSI colours come from **Aether 4.32.0**, using the default Starship launch photo imported from the Space theme. Theme generation runs with `--no-apply`, writing only to a temporary directory:
 
 ```bash
-aether --extract-palette backgrounds/06-raptor-array.webp --json
+aether --extract-palette /path/to/0-starship-launch.jpg --json
+aether --generate /path/to/0-starship-launch.jpg --no-apply --output /tmp/starship-palette
 ```
 
-[`palette.json`](palette.json) preserves all extraction results and maps each selected token to its photo and ANSI palette slot. Aether derives readable colours from image analysis; it can adjust tones, so these are generated image palettes rather than unchanged pixel samples. The muted steel colour uses Aether's `--lighten` utility on the Raptor array's extracted grey.
+[`palette.json`](palette.json) preserves the extracted palette, generated variables, token mappings, and the earlier extractions from the original 16 photographs. Aether derives colours from image analysis and adjusts tones. Muted text uses its `--lighten` utility for readability.
 
-| Colour | Hex | Source / role |
+| Colour | Hex | Role |
 | --- | --- | --- |
-| Space black | `#000000` | SpaceX base backgrounds |
-| SpaceX white | `#F0F0FA` | Foreground and primary accent |
-| Stainless steel | `#CBD0DB` | Orbital coast; borders and secondary text |
-| Plume red | `#E5998D` | Raptor array; terminal and editor errors |
-| Exhaust gold | `#E6B88B` | Raptor array; strings and terminal yellow |
-| Dawn green | `#84B490` | Starbase dawn; terminal green |
-| Orbital cyan | `#91E0FF` | Orbital coast; terminal cyan |
-| Engine blue | `#86A1DF` | Raptor array; terminal blue |
-| Engine violet | `#C094DE` | Engine bay; terminal magenta |
-| NASA blue / PMS 286 | `#0033AB` | Selection background; image-derived bright foreground |
+| Launch night | `#0A0503` | Base background |
+| Warm shadow | `#231E1C` | Raised surfaces and inactive borders |
+| Exhaust cream | `#F3E1A5` | Foreground |
+| Sky blue | `#527DBC` | Accent and active borders |
+| Plume amber | `#AB7233` | ANSI red |
+| Exhaust gold | `#E8C97C` | ANSI green |
+| Sunlit steam | `#FEE389` | ANSI yellow |
+| Sky cyan | `#69B3E2` | ANSI cyan |
+| NASA blue / PMS 286 | `#0033AB` | Selection background |
 | NASA red / PMS 185 | `#E60D2E` | Bar attention states |
 
-Black and `#F0F0FA` follow [SpaceX's website](https://www.spacex.com/) and its [published stylesheet](https://www.spacex.com/styles.1a4bd8588c6ea618.css). NASA's Pantone designations and these screen hex values are specified in its [Artemis Generation Spacesuits guide, p. 35](https://www.nasa.gov/wp-content/uploads/2023/03/artemis-generation-spacesuits-508.pdf). These small brand accents are retained alongside the image-derived palette.
+The launch photo supplies the palette’s base. The small NASA accents use the Pantone designations and screen values in the [Artemis Generation Spacesuits guide, p. 35](https://www.nasa.gov/wp-content/uploads/2023/03/artemis-generation-spacesuits-508.pdf).
 
-All normal ANSI text colours and muted text exceed 4.5:1 contrast on black. The image-derived bright foreground on the NASA blue selection exceeds 9:1.
+Normal ANSI text colours and muted text exceed 4.5:1 contrast on the launch-night background.
 
 ## Omarchy support
 
-Uses Omarchy's semantic `colors.toml` format and its built-in app templates, like the stock themes. Omarchy generates the terminal, Hyprland, Neovim, Helix, btop, browser, and other supported app colours from the palette. `shell.bar.toml` sets a solid black bar with NASA red alerts, and `icons.theme` selects Yaru blue icons. Neovim uses Omarchy's built-in Aether integration.
+Uses Omarchy's semantic `colors.toml` format and its built-in app templates, like the stock themes. Omarchy generates the terminal, Hyprland, Neovim, Helix, btop, browser, and other supported app colours from the palette. `shell.bar.toml` sets a launch-night bar with NASA red attention states, and `icons.theme` selects Yaru blue icons. Neovim uses Omarchy's built-in Aether integration.
 
 Requires **Omarchy 4.0 or later**, including support for `shell.*.toml` section overrides. The repository contains the palette and colour-only overrides; terminal configs and Lua files are generated by Omarchy on installation.
 
@@ -58,8 +58,10 @@ Requires **Omarchy 4.0 or later**, including support for `shell.*.toml` section 
 
 ## Photography
 
-Photography © SpaceX, supplied from SpaceX's X posts. All 16 photographs retain their original dimensions, including the portrait photograph, and are encoded as sRGB WebP to reduce download size. Omarchy fits the selected photograph to the display. No generative imagery or colour filters were added.
+The original 16 supplied SpaceX photographs retain their original dimensions, including the portrait photograph. All 12 Space theme backgrounds are also included at their supplied dimensions, with its `0-starship-launch.jpg` first in our cycling order as `00-starship-launch.webp`. Some shots appear in both collections as different-resolution variants.
 
-[`wallpapers.json`](wallpapers.json) records each original filename, supplied URL, dimensions, and checksums of both the original and distributed image. The default wallpaper is `01-orbital-coast.webp`; filenames set the cycling order.
+The Space theme describes its 6K files as Topaz High Fidelity V2 upscales; Starship retains those supplied variants and adds no further AI processing. `7-starship.jpg` has an unknown original source in that repository, which is recorded in the manifest. Images are encoded as sRGB WebP without colour filters.
+
+[`wallpapers.json`](wallpapers.json) records each source, dimensions, original and distributed checksums, and the pinned Space theme source commit. Omarchy fits the selected photograph to the display. See [photography credits](NOTICE.md).
 
 Theme configuration and the custom icon are MIT licensed. The SpaceX photographs retain their original rights and are excluded from that licence. See [SpaceX's media policy](https://www.spacex.com/trademark) and [photography credits](NOTICE.md). This is an independent, non-commercial community theme.
